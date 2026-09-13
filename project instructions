@@ -1,0 +1,70 @@
+Project Instructions: NovaTech Revenue Intelligence Dashboard
+NovaTech Solutions is a B2B SaaS company whose revenue data lives in three separate systems: CRM deals, marketing campaigns, and support tickets. VP of Revenue Operations Sarah Chen has asked you to unify these into a single Revenue Intelligence Dashboard so her team can spot revenue trends, identify at-risk accounts, and make faster decisions.
+Your workspace includes pre-indexed knowledge bases (created by the instructor), three CSV starter files, a data dictionary, a company background brief, and Sarah Chen's dashboard requirements brief. Read all three reference documents before you begin.
+Building unified analytics dashboards from siloed data sources is a core responsibility for BI analysts — this project mirrors the exact workflow you would follow when joining a new team and being asked to consolidate reporting across multiple business systems.
+Collect Screenshots
+As you complete the following project tasks, make sure to collect screenshots from the Submission Deliverables section below to submit.
+
+Hier ist die Task List (Original, Englisch) zum Kopieren:
+
+```
+Task List
+
+Complete the following tasks to build the NovaTech Revenue Intelligence Dashboard.
+
+1. Verify pre-indexed knowledge bases. Query each of the three data knowledge bases (CRM deals, marketing campaigns, support tickets) through Quick Chat. Compare Q's answers against the data dictionary to confirm the indexed data is complete and accurate. Record your findings in the verification log with at least 6 entries covering all three KBs. *
+
+2. Upload and import CSV datasets. Upload the three CSV files (crm_deals.csv, marketing_campaigns.csv, support_tickets.csv) as datasets. Use Edit/Preview to inspect data types and column counts before importing to SPICE. Verify that row counts match the data dictionary. Take screenshots of the import process.
+
+3. Prepare each dataset for analysis. In the Data section editor, fix incorrect data types and remove columns with no analytical value. Create at least two calculated fields that derive business metrics the raw data doesn't include (e.g., days-to-close, campaign ROI, ticket frequency per account). The data dictionary and Sarah's brief indicate what metrics are needed.
+
+4. Build a unified dataset. Create a fourth dataset that joins all three sources on their shared key. Decide which table to anchor on and which join type to use — your choice should reflect the dashboard's purpose. Save all four datasets to SPICE. Take screenshots of the join diagram and configuration. In your report, explain your join strategy and how you handled row multiplication. (for this task if you were unable to do it in the new UI experience, you may need to "Switch back to the legacy experience" from the top right of the dataset editor)
+
+5. Build the Marketing Funnel sheet. Create an analysis and add the first sheet focused on campaign performance: which campaigns drive the most leads and how efficiently they convert. Include KPI summary cards and visuals appropriate to these questions. Add interactive filter controls.
+
+6. Build the Sales Pipeline sheet. Add a second sheet focused on pipeline performance: deal stages, revenue by segment, and win/loss rates. Include KPI summary cards, filter controls, and one-click filtering on at least two visuals.
+
+7. Build the Customer Health sheet. Add a third sheet focused on account risk: support ticket volume, resolution times, and account health indicators. Include at least one cross-dataset visual from the unified dataset. Configure at least one cross-sheet navigation action from this sheet.
+
+8. Publish and export the dashboard. Publish your analysis as a dashboard. Enable Executive Summary if available. Export the dashboard as a PDF covering all three sheets. Take screenshots of each sheet, filters in action, and the navigation action setup.
+
+9. Establish a Quick Chat baseline. Scope Quick Chat to your published dashboard. Ask 2–3 questions and screenshot Q's responses. These screenshots serve as your before-Topic baseline.
+
+10. Configure a Topic to improve Q accuracy. Create a Topic in Quick Chat that describes your data in business terms. Consider adding field descriptions, synonyms, and toggling off noisy fields (internal IDs, keys). Your goal is to measurably improve Q's accuracy on your data.
+
+11. Re-test and explore with Quick Chat. Re-ask the same 2–3 baseline questions scoped to your Topic and screenshot the improvement. Then ask at least 5 new questions spanning all three data domains, including at least one cross-dataset question. Cross-check every answer against your dashboard. Record all findings in the Q Exploration Log. If Q cannot answer a question, document that as a valid finding.
+
+12. Annotate the dashboard with insights. Add 3–5 text annotations across your dashboard sheets. Each annotation should state a quantified finding, explain why it matters to the business, and recommend a specific action for the revenue team.
+
+13. Write the executive report. Write a 1–3 page report for VP Sarah Chen that a non-technical executive can read without logging into the dashboard. Cover your data strategy, dashboard design rationale, how Topic configuration affected Q accuracy, your key insights with recommended actions, and where AI analysis agreed or disagreed with the dashboard.
+```
+
+Sprachkorrektur
+– Keine deutlich unnatürliche Formulierung.
+Task List
+Complete the following tasks to build the NovaTech Revenue Intelligence Dashboard.
+Verify Your Implementation
+Before submitting, walk through these verification scenarios to confirm your work is complete.
+Verification 1 — Data completeness Open each of your four datasets and confirm the row counts and column counts match your expectations. The unified dataset should have more rows than any individual source (due to joins). If the row count seems unexpectedly high, review your join type and consider whether fan-out is occurring as expected.
+Verification 2 — Dashboard interactivity Open your published dashboard. On each sheet, apply a filter and confirm the visuals update. Click a data point to trigger one-click filtering on a second visual. Use the cross-sheet navigation action and confirm it takes you to the correct sheet.
+Verification 3 — Quick Chat accuracy Open Quick Chat scoped to your Topic. Ask a question you know the answer to from your dashboard (e.g., "What is the total revenue from closed-won deals?"). Compare Q's answer to the KPI on your Sales Pipeline sheet. They should agree or you should be able to explain the discrepancy.
+Verification 4 — Report completeness Review your executive report against the requirements: Does it cover data strategy, design rationale, Topic configuration effects, key insights with actions, and AI vs. dashboard comparison? Can a non-technical reader understand it without logging in?
+Verification 5 — Annotation quality Review your dashboard annotations. Each should go beyond restating the chart title — it should include a specific number, a business explanation, and a recommended action.
+Submission Checklist
+Before submitting, confirm you have included all of the following:
+
+```
+Submission Checklist
+
+Before submitting, confirm you have included all of the following:
+
+- Verification log — at least 6 entries covering all three knowledge bases, using the provided markdown template or equivalent structured format
+- Data transformation screenshots — join diagram, join configuration, calculated fields, and data type corrections
+- Dashboard PDF export — all 3 sheets (Marketing Funnel, Sales Pipeline, Customer Health)
+- Before/after Topic screenshots — baseline Q responses and post-Topic Q responses for the same 2–3 questions
+- Q Exploration Log — at least 5 entries spanning all three data domains with questions, Q responses, and dashboard verification
+- Dashboard executive summary text — auto-generated from the published dashboard (if available in your workspace)
+- Annotated dashboard screenshots — showing 3–5 text annotations on your dashboard sheets
+- Written report for VP Sarah Chen — 1–3 pages covering data strategy, design rationale, Topic effects, key insights, and AI comparison
+```
+
